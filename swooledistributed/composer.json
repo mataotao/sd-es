@@ -1,0 +1,1 @@
+{"require": {"tmtbe/swooledistributed":"=3.2.1"},"autoload": {"psr-4": {"app\\": "src/app","test\\": "src/test"}}}

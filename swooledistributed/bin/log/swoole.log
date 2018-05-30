@@ -1,0 +1,135 @@
+[2018-05-10 10:58:11 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:11 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:11 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:11 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:11 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 @11903.0]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught Whoops\Exception\ErrorException: Swoole\Http\Client::execute(): Connection failed, the server was unavailable. in /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Asyn/HttpClient/HttpClient.php:186
+Stack trace:
+#0 [internal function]: Server\SwooleServer->displayErrorHandler(2, 'Swoole\\Http\\Cli...', '/usr/src/sd/ven...', 186, Array)
+#1 /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Asyn/HttpClient/HttpClient.php(186): Swoole\Http\Client-
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#9 abnormal exit, status=255, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:12 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 10:58:13 $11888.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-10 11:00:51 @12529.0]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught Whoops\Exception\ErrorException: Undefined index: x-consul-index in /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Components/TimerTask/TimerTask.php:175
+Stack trace:
+#0 /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Components/TimerTask/TimerTask.php(175): Server\SwooleServer->displayErrorHandler(8, 'Undefined index...', '/usr/src/sd/ven...', 175, Array)
+#1 [internal function]: Server\Components\TimerTask\TimerTask->Server\Components\Ti
+[2018-05-10 11:00:51 $12514.0]	WARNING	swManager_check_exit_status: worker#9 abnormal exit, status=255, signal=0
+[2018-05-10 11:00:52 @12548.0]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught Whoops\Exception\ErrorException: Undefined index: x-consul-index in /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Components/TimerTask/TimerTask.php:175
+Stack trace:
+#0 /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Components/TimerTask/TimerTask.php(175): Server\SwooleServer->displayErrorHandler(8, 'Undefined index...', '/usr/src/sd/ven...', 175, Array)
+#1 [internal function]: Server\Components\TimerTask\TimerTask->Server\Components\Ti
+[2018-05-10 11:00:52 $12514.0]	WARNING	swManager_check_exit_status: worker#9 abnormal exit, status=255, signal=0
+[2018-05-10 11:00:52 @12531.0]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught Whoops\Exception\ErrorException: Invalid argument supplied for foreach() in /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Components/Cluster/ClusterProcess.php:486
+Stack trace:
+#0 /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Components/Cluster/ClusterProcess.php(486): Server\SwooleServer->displayErrorHandler(2, 'Invalid argumen...', '/usr/src/sd/ven...', 486, Array)
+#1 [internal function]: Server\Components\Cluster\ClusterProcess->Ser
+[2018-05-10 11:00:52 $12514.0]	WARNING	swManager_check_exit_status: worker#11 abnormal exit, status=255, signal=0
+[2018-05-10 11:02:11 @12593.0]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught Whoops\Exception\ErrorException: Undefined index: x-consul-index in /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Components/TimerTask/TimerTask.php:175
+Stack trace:
+#0 /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Components/TimerTask/TimerTask.php(175): Server\SwooleServer->displayErrorHandler(8, 'Undefined index...', '/usr/src/sd/ven...', 175, Array)
+#1 [internal function]: Server\Components\TimerTask\TimerTask->Server\Components\Ti
+[2018-05-10 11:02:11 $12578.0]	WARNING	swManager_check_exit_status: worker#9 abnormal exit, status=255, signal=0
+[2018-05-10 11:02:12 @12612.0]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught Whoops\Exception\ErrorException: Undefined index: x-consul-index in /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Components/TimerTask/TimerTask.php:175
+Stack trace:
+#0 /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Components/TimerTask/TimerTask.php(175): Server\SwooleServer->displayErrorHandler(8, 'Undefined index...', '/usr/src/sd/ven...', 175, Array)
+#1 [internal function]: Server\Components\TimerTask\TimerTask->Server\Components\Ti
+[2018-05-10 11:02:12 $12578.0]	WARNING	swManager_check_exit_status: worker#9 abnormal exit, status=255, signal=0
+[2018-05-10 11:02:12 @12595.0]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught Whoops\Exception\ErrorException: Invalid argument supplied for foreach() in /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Components/Cluster/ClusterProcess.php:486
+Stack trace:
+#0 /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Components/Cluster/ClusterProcess.php(486): Server\SwooleServer->displayErrorHandler(2, 'Invalid argumen...', '/usr/src/sd/ven...', 486, Array)
+#1 [internal function]: Server\Components\Cluster\ClusterProcess->Ser
+[2018-05-10 11:02:12 $12578.0]	WARNING	swManager_check_exit_status: worker#11 abnormal exit, status=255, signal=0
+[2018-05-10 11:02:13 @12617.0]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught Whoops\Exception\ErrorException: Undefined index: x-consul-index in /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Components/TimerTask/TimerTask.php:175
+Stack trace:
+#0 /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Components/TimerTask/TimerTask.php(175): Server\SwooleServer->displayErrorHandler(8, 'Undefined index...', '/usr/src/sd/ven...', 175, Array)
+#1 [internal function]: Server\Components\TimerTask\TimerTask->Server\Components\Ti
+[2018-05-10 11:02:13 $12578.0]	WARNING	swManager_check_exit_status: worker#9 abnormal exit, status=255, signal=0
+[2018-05-10 11:02:14 @12618.0]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught Whoops\Exception\ErrorException: Invalid argument supplied for foreach() in /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Components/Cluster/ClusterProcess.php:486
+Stack trace:
+#0 /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Components/Cluster/ClusterProcess.php(486): Server\SwooleServer->displayErrorHandler(2, 'Invalid argumen...', '/usr/src/sd/ven...', 486, Array)
+#1 [internal function]: Server\Components\Cluster\ClusterProcess->Ser
+[2018-05-10 11:02:14 $12578.0]	WARNING	swManager_check_exit_status: worker#11 abnormal exit, status=255, signal=0
+[2018-05-10 11:02:14 @12621.0]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught Whoops\Exception\ErrorException: Undefined index: x-consul-index in /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Components/TimerTask/TimerTask.php:175
+Stack trace:
+#0 /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Components/TimerTask/TimerTask.php(175): Server\SwooleServer->displayErrorHandler(8, 'Undefined index...', '/usr/src/sd/ven...', 175, Array)
+#1 [internal function]: Server\Components\TimerTask\TimerTask->Server\Components\Ti
+[2018-05-10 11:02:14 $12578.0]	WARNING	swManager_check_exit_status: worker#9 abnormal exit, status=255, signal=0
+[2018-05-10 11:02:15 @12627.0]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught Whoops\Exception\ErrorException: Undefined index: x-consul-index in /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Components/TimerTask/TimerTask.php:175
+Stack trace:
+#0 /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Components/TimerTask/TimerTask.php(175): Server\SwooleServer->displayErrorHandler(8, 'Undefined index...', '/usr/src/sd/ven...', 175, Array)
+#1 [internal function]: Server\Components\TimerTask\TimerTask->Server\Components\Ti
+[2018-05-10 11:02:15 $12578.0]	WARNING	swManager_check_exit_status: worker#9 abnormal exit, status=255, signal=0
+[2018-05-11 02:23:53 $38.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-11 02:23:54 @56.0]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught Whoops\Exception\ErrorException: Swoole\Http\Client::execute(): Connection failed, the server was unavailable. in /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Asyn/HttpClient/HttpClient.php:186
+Stack trace:
+#0 [internal function]: Server\SwooleServer->displayErrorHandler(2, 'Swoole\\Http\\Cli...', '/usr/src/sd/ven...', 186, Array)
+#1 /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Asyn/HttpClient/HttpClient.php(186): Swoole\Http\Client-
+[2018-05-11 02:23:54 $38.0]	WARNING	swManager_check_exit_status: worker#11 abnormal exit, status=255, signal=0
+[2018-05-11 02:23:54 $38.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-11 02:23:55 $38.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-11 02:24:48 $39.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-11 02:24:48 $39.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-11 02:24:49 $39.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-11 02:25:57 $115.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-11 02:25:58 $115.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-11 02:29:46 $185.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-11 02:29:47 @202.0]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught Whoops\Exception\ErrorException: Swoole\Http\Client::execute(): Connection failed, the server was unavailable. in /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Asyn/HttpClient/HttpClient.php:186
+Stack trace:
+#0 [internal function]: Server\SwooleServer->displayErrorHandler(2, 'Swoole\\Http\\Cli...', '/usr/src/sd/ven...', 186, Array)
+#1 /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Asyn/HttpClient/HttpClient.php(186): Swoole\Http\Client-
+[2018-05-11 02:29:47 $185.0]	WARNING	swManager_check_exit_status: worker#11 abnormal exit, status=255, signal=0
+[2018-05-11 02:29:47 $185.0]	WARNING	swManager_check_exit_status: worker#10 abnormal exit, status=1, signal=0
+[2018-05-11 02:55:50 @1311.0]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught Whoops\Exception\ErrorException: Undefined index: x-consul-index in /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Components/TimerTask/TimerTask.php:175
+Stack trace:
+#0 /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Components/TimerTask/TimerTask.php(175): Server\SwooleServer->displayErrorHandler(8, 'Undefined index...', '/usr/src/sd/ven...', 175, Array)
+#1 [internal function]: Server\Components\TimerTask\TimerTask->Server\Components\Ti
+[2018-05-11 02:55:50 @1313.0]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught Whoops\Exception\ErrorException: Invalid argument supplied for foreach() in /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Components/Cluster/ClusterProcess.php:486
+Stack trace:
+#0 /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Components/Cluster/ClusterProcess.php(486): Server\SwooleServer->displayErrorHandler(2, 'Invalid argumen...', '/usr/src/sd/ven...', 486, Array)
+#1 [internal function]: Server\Components\Cluster\ClusterProcess->Ser
+[2018-05-11 02:55:50 $1296.0]	WARNING	swManager_check_exit_status: worker#11 abnormal exit, status=255, signal=0
+[2018-05-11 02:55:50 $1296.0]	WARNING	swManager_check_exit_status: worker#9 abnormal exit, status=255, signal=0
+[2018-05-11 02:55:51 @1335.0]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught Whoops\Exception\ErrorException: Undefined index: x-consul-index in /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Components/TimerTask/TimerTask.php:175
+Stack trace:
+#0 /usr/src/sd/vendor/tmtbe/swooledistributed/src/Server/Components/TimerTask/TimerTask.php(175): Server\SwooleServer->displayErrorHandler(8, 'Undefined index...', '/usr/src/sd/ven...', 175, Array)
+#1 [internal function]: Server\Components\TimerTask\TimerTask->Server\Components\Ti
+[2018-05-11 02:55:51 $1296.0]	WARNING	swManager_check_exit_status: worker#9 abnormal exit, status=255, signal=0
+[2018-05-11 05:06:35 *94.1]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Cannot declare class app\Controllers\Test\TestController, because the name is already in use in /usr/src/sd/src/app/Controllers/TestController.php on line 24.
+[2018-05-11 05:06:35 $82.0]	WARNING	swManager_check_exit_status: worker#1 abnormal exit, status=255, signal=0
+[2018-05-11 05:06:51 *102.1]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Cannot declare class app\Controllers\Test\TestController, because the name is already in use in /usr/src/sd/src/app/Controllers/TestController.php on line 24.
+[2018-05-11 05:06:51 $82.0]	WARNING	swManager_check_exit_status: worker#1 abnormal exit, status=255, signal=0
+ > [SYS] 已开启代码热重载
+ > [CatCache] 已完成加载缓存文件
