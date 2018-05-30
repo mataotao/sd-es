@@ -1,0 +1,17 @@
+version: '2'
+services:
+    sd-es:
+        container_name: sd-es
+        image: mataotao/swooledistributed
+        ports:
+            - "9091:9091"
+            - "9092:9092"
+            - "9093:9093"
+            - "9999:9999"
+            - "9051:9051"
+       # volumes:
+           # - ./swooledistributed:/usr/src/sd
+           # - ./easyswoole:/usr/src/easyswoole
+        stdin_open: true
+        tty: true
+
