@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bed8e8fc-9ff6-4246-9547-c5842353441e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/docker-compose-kafka-zookeeper.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-kafka-zookeeper.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Console/Commands/KafkaConsumer.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Console/Commands/KafkaConsumer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Console/Commands/KafkaTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Console/Commands/KafkaTest.php" afterDir="false" />
-    </list>
+    <list default="true" id="bed8e8fc-9ff6-4246-9547-c5842353441e" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,17 +17,8 @@
       <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="122" column="18" selection-start-line="122" selection-start-column="18" selection-end-line="122" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="docker-compose-kafka-zookeeper.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker-compose-kafka-zookeeper.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="641">
-              <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
+            <state relative-caret-position="1159">
+              <caret line="144" selection-start-line="144" selection-end-line="144" />
             </state>
           </provider>
         </entry>
@@ -39,7 +26,7 @@
       <file leaf-file-name="KafkaTest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/laravel/app/Console/Commands/KafkaTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
+            <state relative-caret-position="646">
               <caret line="38" column="100" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="100" />
               <folding>
                 <element signature="e#40#53#0#PHP" expanded="true" />
@@ -51,26 +38,8 @@
       <file leaf-file-name="KafkaConsumer.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/laravel/app/Console/Commands/KafkaConsumer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProducerConfig.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/laravel/vendor/nmred/kafka-php/src/Kafka/ProducerConfig.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="69" column="35" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/laravel/vendor/nmred/kafka-php/src/Kafka/Config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-495">
-              <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+            <state relative-caret-position="551">
+              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -83,7 +52,7 @@
       <file leaf-file-name="redis.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/swooledistributed/src/config/redis.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state relative-caret-position="38">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
@@ -183,7 +152,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,11 +163,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
@@ -236,15 +205,15 @@
       <workItem from="1527663411737" duration="1344000" />
       <workItem from="1527669194201" duration="1712000" />
       <workItem from="1527728588881" duration="19407000" />
+      <workItem from="1527771145811" duration="28000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33677000" />
+    <option name="totallyTimeSpent" value="33705000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Key Promoter X" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -259,12 +228,13 @@
       <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.36095965" />
       <window_info anchor="right" id="JSON Viewer" order="3" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24786781" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Tail" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -280,6 +250,40 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1159">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel/app/Console/Commands/KafkaTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="38" column="100" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="100" />
+          <folding>
+            <element signature="e#40#53#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swooledistributed/src/test/ServerUnitTest.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swooledistributed/src/config/redis.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel/app/Console/Commands/KafkaConsumer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -324,13 +328,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/server/apache/conf/extra/httpd-vhosts.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9231">
-          <caret line="543" column="38" selection-start-line="543" selection-start-column="29" selection-end-line="543" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/server/apache/conf/extra/httpd-vhosts.conf" />
     <entry file="file://$PROJECT_DIR$/server/mysql/my.cnf">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -389,13 +387,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/server/apache/conf/extra/httpd-vhosts.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="543" column="38" selection-start-line="543" selection-start-column="29" selection-end-line="543" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/server/apache/conf/extra/httpd-vhosts.conf" />
     <entry file="file://$PROJECT_DIR$/easyswoole/vendor/easyswoole/easyswoole/src/Core/Component/Cluster/NetWork/Udp.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -439,7 +431,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/swooledistributed/src/config/redis.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state relative-caret-position="38">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
@@ -451,34 +443,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/laravel/vendor/nmred/kafka-php/src/Kafka/SingletonTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravel/vendor/nmred/kafka-php/src/Kafka/Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-495">
-          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravel/vendor/nmred/kafka-php/src/Kafka/ProducerConfig.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="69" column="35" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravel/vendor/nmred/kafka-php/src/Kafka/Producer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="66" column="78" selection-start-line="66" selection-start-column="71" selection-end-line="66" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel/vendor/nmred/kafka-php/src/Kafka/SingletonTrait.php" />
+    <entry file="file://$PROJECT_DIR$/laravel/vendor/nmred/kafka-php/src/Kafka/Config.php" />
+    <entry file="file://$PROJECT_DIR$/laravel/vendor/nmred/kafka-php/src/Kafka/ProducerConfig.php" />
+    <entry file="file://$PROJECT_DIR$/laravel/vendor/nmred/kafka-php/src/Kafka/Producer.php" />
     <entry file="file://$PROJECT_DIR$/docker-compose.yml.bak.1">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -488,21 +456,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="122" column="18" selection-start-line="122" selection-start-column="18" selection-end-line="122" selection-end-column="18" />
+        <state relative-caret-position="1159">
+          <caret line="144" selection-start-line="144" selection-end-line="144" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose-kafka-zookeeper.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose-kafka-zookeeper.yml" />
     <entry file="file://$PROJECT_DIR$/laravel/app/Console/Commands/KafkaTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
+        <state relative-caret-position="646">
           <caret line="38" column="100" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="100" />
           <folding>
             <element signature="e#40#53#0#PHP" expanded="true" />
@@ -512,8 +474,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/laravel/app/Console/Commands/KafkaConsumer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        <state relative-caret-position="551">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
         </state>
       </provider>
     </entry>

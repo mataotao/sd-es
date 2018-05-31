@@ -4,3 +4,6 @@ server/redis/data
 server/redis/logs
 server/redis/redis_cache
 server/nginx/logs
+server/redisCluster/data
+server/redisCluster/redis-conf
+server/redisCluster/redis-data

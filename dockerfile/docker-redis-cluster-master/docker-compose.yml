@@ -1,0 +1,12 @@
+version: '2'
+services:
+  redis-cluster:
+    environment:
+     IP: ${REDIS_CLUSTER_IP}
+    build:
+      context: .
+      args:
+        redis_version: '4.0.9'
+    hostname: server
+    ports:
+      - '7000-7007:7000-7007'
