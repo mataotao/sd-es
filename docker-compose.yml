@@ -24,6 +24,7 @@ services:
         volumes:
             - ./swooledistributed:/usr/src/swooledistributed
             - ./easyswoole:/usr/src/easyswoole
+            - ./laravel:/usr/src/laravel
         stdin_open: true
         tty: true
         links:
@@ -61,7 +62,7 @@ services:
         tty: true
 
     kafka1:
-        image: wurstmeister/kafka
+        image: wurstmeister/kafka:1.1.0
         depends_on:
           - zoo1
           - zoo2
@@ -79,7 +80,7 @@ services:
           KAFKA_ZOOKEEPER_CONNECT:  zoo1:2181,zoo2:2181,zoo3:2181
 
     kafka2:
-        image: wurstmeister/kafka
+        image: wurstmeister/kafka:1.1.0
         depends_on:
           - zoo1
           - zoo2
@@ -96,7 +97,7 @@ services:
           KAFKA_ZOOKEEPER_CONNECT:  zoo1:2181,zoo2:2181,zoo3:2181
 
     kafka3:
-        image: wurstmeister/kafka
+        image: wurstmeister/kafka:1.1.0
         depends_on:
           - zoo1
           - zoo2
@@ -113,7 +114,7 @@ services:
           KAFKA_ZOOKEEPER_CONNECT:  zoo1:2181,zoo2:2181,zoo3:2181
 
     zoo1:
-        image: elevy/zookeeper:latest
+        image: elevy/zookeeper:v3.4.10
         environment:
           MYID: 1
           SERVERS: zoo1,zoo2,zoo3
@@ -123,7 +124,7 @@ services:
           - "3888"
 
     zoo2:
-        image: elevy/zookeeper:latest
+        image: elevy/zookeeper:v3.4.10
         environment:
           MYID: 2
           SERVERS: zoo1,zoo2,zoo3
@@ -133,7 +134,7 @@ services:
           - "3888"
 
     zoo3:
-        image: elevy/zookeeper:latest
+        image: elevy/zookeeper:v3.4.10
         environment:
           MYID: 3
           SERVERS: zoo1,zoo2,zoo3
