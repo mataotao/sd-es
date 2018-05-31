@@ -36,7 +36,7 @@ class KafkaTest extends Command
         /////////////////////producer
         $config = ProducerConfig::getInstance();
         $config->setMetadataRefreshIntervalMs(10000);
-        $config->setMetadataBrokerList('192.168.0.113:9092,192.168.0.113:9093,192.168.0.113:9094');//集群配置
+        $config->setMetadataBrokerList('119.23.237.167:9092,119.23.237.167:9093,119.23.237.167:9094');//集群配置
         $config->setBrokerVersion('1.1.0');
         $config->setRequiredAck(1);
         $config->setIsAsyn(false);

@@ -12,7 +12,7 @@ services:
           KAFKA_LOG_DIRS: /kafka
           KAFKA_BROKER_ID: 1
           KAFKA_CREATE_TOPICS: test-topic-1:1:2,test-topic-2:1:2,test-topic-3:1:2
-          KAFKA_ADVERTISED_HOST_NAME: 192.168.0.113
+          KAFKA_ADVERTISED_HOST_NAME: 119.23.237.167
           KAFKA_ADVERTISED_PORT: 9092
           KAFKA_LOG_RETENTION_HOURS: "168"
           KAFKA_LOG_RETENTION_BYTES: "100000000"
@@ -30,7 +30,7 @@ services:
           TZ : "Asia/Shanghai"
           KAFKA_LOG_DIRS: /kafka
           KAFKA_BROKER_ID: 2
-          KAFKA_ADVERTISED_HOST_NAME: 192.168.0.113
+          KAFKA_ADVERTISED_HOST_NAME: 119.23.237.167
           KAFKA_ADVERTISED_PORT: 9093
           KAFKA_LOG_RETENTION_HOURS: "168"
           KAFKA_LOG_RETENTION_BYTES: "100000000"
@@ -47,14 +47,14 @@ services:
         environment:
           KAFKA_LOG_DIRS: /kafka
           KAFKA_BROKER_ID: 3
-          KAFKA_ADVERTISED_HOST_NAME: 192.168.0.113
+          KAFKA_ADVERTISED_HOST_NAME: 119.23.237.167
           KAFKA_ADVERTISED_PORT: 9094
           KAFKA_LOG_RETENTION_HOURS: "168"
           KAFKA_LOG_RETENTION_BYTES: "100000000"
           KAFKA_ZOOKEEPER_CONNECT:  zoo1:2181,zoo2:2181,zoo3:2181
 
     zoo1:
-        image: levy/zookeeper:v3.4.10
+        image: elevy/zookeeper:v3.4.10
         environment:
           MYID: 1
           SERVERS: zoo1,zoo2,zoo3
@@ -64,7 +64,7 @@ services:
           - "3888"
 
     zoo2:
-        image: levy/zookeeper:v3.4.10
+        image: elevy/zookeeper:v3.4.10
         environment:
           MYID: 2
           SERVERS: zoo1,zoo2,zoo3
@@ -74,7 +74,7 @@ services:
           - "3888"
 
     zoo3:
-        image: levy/zookeeper:v3.4.10
+        image: elevy/zookeeper:v3.4.10
         environment:
           MYID: 3
           SERVERS: zoo1,zoo2,zoo3

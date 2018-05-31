@@ -34,12 +34,13 @@ class KafkaConsumer extends Command
     {
         $config = ConsumerConfig::getInstance();
         $config->setMetadataRefreshIntervalMs(10000);
-        $config->setMetadataBrokerList('192.168.0.113:9092,192.168.0.113:9093,192.168.0.113:9094');
+        $config->setMetadataBrokerList('119.23.237.167:9092,119.23.237.167:9093,119.23.237.167:9094');
         $config->setGroupId('test');
         $config->setBrokerVersion('1.1.0');
         $config->setTopics(array('test'));
         $consumer = new \Kafka\Consumer();
         $consumer->start(function($topic, $part, $message) {
+            var_dump($message);
         });
         
     }

@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bed8e8fc-9ff6-4246-9547-c5842353441e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose-kafka-zookeeper.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-kafka-zookeeper.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/Console/Commands/KafkaConsumer.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Console/Commands/KafkaConsumer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/Console/Commands/KafkaTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Console/Commands/KafkaTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,17 +21,26 @@
       <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="99" column="39" selection-start-line="99" selection-start-column="34" selection-end-line="99" selection-end-column="39" />
+            <state relative-caret-position="272">
+              <caret line="122" column="18" selection-start-line="122" selection-start-column="18" selection-end-line="122" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KafkaTest.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="docker-compose-kafka-zookeeper.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docker-compose-kafka-zookeeper.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="641">
+              <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KafkaTest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/laravel/app/Console/Commands/KafkaTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
+            <state relative-caret-position="199">
+              <caret line="38" column="100" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="100" />
               <folding>
                 <element signature="e#40#53#0#PHP" expanded="true" />
               </folding>
@@ -38,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KafkaConsumer.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="KafkaConsumer.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/laravel/app/Console/Commands/KafkaConsumer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+            <state relative-caret-position="213">
+              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -51,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/laravel/vendor/nmred/kafka-php/src/Kafka/ProducerConfig.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="129">
-              <caret line="69" column="35" lean-forward="true" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
+              <caret line="69" column="35" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -61,15 +71,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-495">
               <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="docker-compose-kafka-zookeeper.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker-compose-kafka-zookeeper.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-289">
-              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -98,21 +99,25 @@
       <find>- TZ=Asia/Shanghai</find>
       <find>: &quot;America/Denver&quot;</find>
       <find>tz</find>
-      <find>kafka</find>
-      <find>wurstmeister/kafka</find>
-      <find>elevy/zookeeper:latest</find>
       <find>3.4.10</find>
       <find>requiredAck</find>
       <find>Group</find>
       <find>process</find>
+      <find>kafka</find>
+      <find>wurstmeister/kafka</find>
+      <find>elevy/zookeeper:latest</find>
+      <find>k</find>
+      <find>192.168.0.113</find>
     </findStrings>
     <replaceStrings>
       <replace>Asia/Shanghai</replace>
       <replace>- TZ=Asia/Shanghai</replace>
       <replace>= Asia/Shanghai</replace>
-      <replace>wurstmeister/kafka:1.1.0</replace>
       <replace>elevy/zookeeper:3.4.10</replace>
       <replace>v3.4.10</replace>
+      <replace>wurstmeister/kafka:1.1.0</replace>
+      <replace>levy/zookeeper:v3.4.10</replace>
+      <replace>119.23.237.167</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -127,8 +132,8 @@
         <option value="D:/server/apache/conf/extra/httpd-vhosts.conf" />
         <option value="$PROJECT_DIR$/easyswoole/Config.php" />
         <option value="$PROJECT_DIR$/swooledistributed/src/config/redis.php" />
-        <option value="$PROJECT_DIR$/docker-compose-kafka-zookeeper.yml" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/docker-compose-kafka-zookeeper.yml" />
         <option value="$PROJECT_DIR$/laravel/app/Console/Commands/KafkaTest.php" />
         <option value="$PROJECT_DIR$/laravel/app/Console/Commands/KafkaConsumer.php" />
       </list>
@@ -186,32 +191,6 @@
               <item name="sd-es" type="b2602c69:ProjectViewProjectNode" />
               <item name="sd-es" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="sd-es" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sd-es" type="462c0819:PsiDirectoryNode" />
-              <item name="laravel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sd-es" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sd-es" type="462c0819:PsiDirectoryNode" />
-              <item name="laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sd-es" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sd-es" type="462c0819:PsiDirectoryNode" />
-              <item name="laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Console" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sd-es" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sd-es" type="462c0819:PsiDirectoryNode" />
-              <item name="laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Console" type="462c0819:PsiDirectoryNode" />
-              <item name="Commands" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -256,15 +235,16 @@
       <workItem from="1527645264489" duration="11214000" />
       <workItem from="1527663411737" duration="1344000" />
       <workItem from="1527669194201" duration="1712000" />
-      <workItem from="1527728588881" duration="16062000" />
+      <workItem from="1527728588881" duration="19407000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30332000" />
+    <option name="totallyTimeSpent" value="33677000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Key Promoter X" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -276,7 +256,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="right" id="Mongo Explorer" order="3" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.28353328" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.36095965" />
       <window_info anchor="right" id="JSON Viewer" order="3" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24786781" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -359,13 +339,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/easyswoole/easyswoole">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml.bak.1">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/nginx/nginx.conf">
       <provider selected="true" editor-type-id="text-editor">
@@ -471,13 +444,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose-kafka-zookeeper.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/laravel/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -502,7 +468,7 @@
     <entry file="file://$PROJECT_DIR$/laravel/vendor/nmred/kafka-php/src/Kafka/ProducerConfig.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
-          <caret line="69" column="35" lean-forward="true" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
+          <caret line="69" column="35" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -513,27 +479,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml.bak.1">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="99" column="39" selection-start-line="99" selection-start-column="34" selection-end-line="99" selection-end-column="39" />
+        <state relative-caret-position="153">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/laravel/app/Console/Commands/KafkaConsumer.php">
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        <state relative-caret-position="272">
+          <caret line="122" column="18" selection-start-line="122" selection-start-column="18" selection-end-line="122" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose-kafka-zookeeper.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="641">
+          <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/laravel/app/Console/Commands/KafkaTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
+        <state relative-caret-position="199">
+          <caret line="38" column="100" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="100" />
           <folding>
             <element signature="e#40#53#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel/app/Console/Commands/KafkaConsumer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
         </state>
       </provider>
     </entry>
