@@ -1,65 +1,5 @@
 version: '2'
 services:
-    nginx:
-        container_name: nginx
-        image: nginx:1.13.12
-        ports:
-            - "80:80"
-        volumes:
-            - ./server/nginx/nginx.conf:/etc/nginx/nginx.conf
-            - ./server/nginx/logs:/logs
-        stdin_open: true
-        tty: true
-        links:
-            - sd-es
-    sd-es:
-        container_name: sd-es
-        image: mataotao/swooledistributed
-        ports:
-            - "19091:19091"
-            - "19092:19092"
-            - "19093:19093"
-            - "19999:19999"
-            - "19501:19501"
-        volumes:
-            - ./swooledistributed:/usr/src/swooledistributed
-            - ./easyswoole:/usr/src/easyswoole
-        stdin_open: true
-        tty: true
-        links:
-            - redis
-            - mysql
-        depends_on:
-            - redis
-            - mysql
-    redis:
-         container_name: redis
-         image: redis:4.0.2
-         ports:
-            - "6379:6379"
-         volumes:
-            - ./server/redis/redis.conf:/etc/redis/redis.conf
-            - ./server/redis/data:/data
-            - ./server/redis/logs:/logs
-            - ./server/redis/redis_cache:/redis_cache
-    mysql:
-        container_name: mysql
-        image: mysql:5.7.22
-        ports:
-            - "3306:3306"
-        volumes:
-            - ./server/mysql/data:/var/lib/mysql
-            - ./server/mysql/logs:/logs
-            - ./server/mysql/my.cnf:/etc/my.cnf
-        environment:
-            MYSQL_USER: root
-            MYSQL_PASSWORD: 123456
-            MYSQL_ROOT_PASSWORD: 123456
-            MYSQL_DATABASE: manager
-
-        stdin_open: true
-        tty: true
-
     kafka1:
         image: wurstmeister/kafka
         depends_on:
@@ -87,6 +27,7 @@ services:
         ports:
           - "9093:9092"
         environment:
+          TZ : "Asia/Shanghai"
           KAFKA_LOG_DIRS: /kafka
           KAFKA_BROKER_ID: 2
           KAFKA_ADVERTISED_HOST_NAME: 192.168.0.113

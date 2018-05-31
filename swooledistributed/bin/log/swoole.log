@@ -133,3 +133,5 @@ Stack trace:
 [2018-05-11 05:06:51 $82.0]	WARNING	swManager_check_exit_status: worker#1 abnormal exit, status=255, signal=0
  > [SYS] 已开启代码热重载
  > [CatCache] 已完成加载缓存文件
+ > [SYS] 已开启代码热重载
+ > [CatCache] 已完成加载缓存文件
