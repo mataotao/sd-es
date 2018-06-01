@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Http\Design\Infrastructure\Helper\Scheduler;
 use App\Http\Design\Infrastructure\Library\Redis;
 use App\User;
 use Illuminate\Console\Command;
@@ -33,31 +34,49 @@ class KafkaTest extends Command
      */
     public function handle()
     {
-        /////////////////////producer
+        for(;;){
+            $a = [];
+            for ($i = 0; $i <= 10; $i++) {
+                $a[] = [
+                    'topic' => 'test2',
+                    'value' => serialize(new Redis()),
+                ];
+            }
+            $this->send($a);
+            unset($a);
+        }
+        
+    }
+    
+    public function send($data): void
+    {
         $config = ProducerConfig::getInstance();
         $config->setMetadataRefreshIntervalMs(10000);
+//        $config->setMessageMaxBytes(999999999);
         $config->setMetadataBrokerList('119.23.237.167:9092,119.23.237.167:9093,119.23.237.167:9094');//集群配置
         $config->setBrokerVersion('1.1.0');
         $config->setRequiredAck(1);
         $config->setIsAsyn(false);
         $config->setProduceInterval(500);
-        $producer = new \Kafka\Producer(function() {
-            return array(
-                array(
-                    'topic' => 'test',
-                    'value' => '11111111111111111111111111.',
-                    'key' => '11111111111111',
-                ),
-            );
+        $send = [];
+        
+        foreach ($data as $value) {
+            $send[] = [
+                'topic' => $value['topic'],
+                'value' => $value['value'],
+            ];
+        }
+        $producer = new \Kafka\Producer(function () use ($send) {
+            return $send;
         });
-        $producer->success(function($result) {
-            var_dump($result,1);
+        
+        $producer->success(function ($result) {
+            var_dump($result);
         });
-        $producer->error(function($errorCode) {
-            var_dump($errorCode,2);
+        $producer->error(function ($errorCode) {
+            var_dump($errorCode);
         });
         $producer->send(true);
-        
         
     }
 }

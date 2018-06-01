@@ -7,8 +7,7 @@ services:
       - ./server/redisCluster/data:/data
       - ./server/redisCluster/redis-conf:/redis-conf
 #      - ./server/redisCluster/redis-data:/redis-data
-    env
-    ironment:
+    environment:
       IP: 0.0.0.0
     ports:
       # master nodes
