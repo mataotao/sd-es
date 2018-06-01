@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Http\Design\Infrastructure\Library\Redis;
 use App\User;
 use Illuminate\Console\Command;
 use Kafka\ConsumerConfig;
@@ -32,7 +33,6 @@ class KafkaTest extends Command
      */
     public function handle()
     {
-        
         /////////////////////producer
         $config = ProducerConfig::getInstance();
         $config->setMetadataRefreshIntervalMs(10000);

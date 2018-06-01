@@ -6,9 +6,10 @@ services:
       # optional
       - ./server/redisCluster/data:/data
       - ./server/redisCluster/redis-conf:/redis-conf
-      - ./server/redisCluster/redis-data:/redis-data
-    environment:
-      IP: 192.168.31.160
+#      - ./server/redisCluster/redis-data:/redis-data
+    env
+    ironment:
+      IP: 0.0.0.0
     ports:
       # master nodes
       - "7000:7000"
