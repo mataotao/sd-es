@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Http\Design\Infrastructure\Library\RabbitMq;
 use App\User;
 use Illuminate\Console\Command;
 use PhpAmqpLib\Connection\AMQPStreamConnection;
@@ -30,21 +31,12 @@ class RabbitMqConsumer extends Command
      */
     public function handle()
     {
-        $connection = new AMQPStreamConnection('192.168.0.113', 5672, 'myuser', 'mypass');
-        $channel = $connection->channel();
-    
-        $channel->queue_declare('hello', false, false, false, false);
-        
         $callback = function ($msg) {
-            echo $msg->body;
             $msg->delivery_info['channel']->basic_ack($msg->delivery_info['delivery_tag']);
+            echo $msg->body;
         };
-    
-        $channel->basic_consume('hello', '', false, false, false, false, $callback);//
-    
-        while (count($channel->callbacks)) {
-            $channel->wait();
-        }
+        RabbitMq::pop('test2222', $callback);
+        
         
     }
 }
