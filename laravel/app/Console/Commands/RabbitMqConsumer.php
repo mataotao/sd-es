@@ -33,8 +33,8 @@ class RabbitMqConsumer extends Command
     public function handle()
     {
         $callback = function ($msg) {
-            $msg->delivery_info['channel']->basic_ack($msg->delivery_info['delivery_tag']);
             echo $msg->body;
+            $msg->delivery_info['channel']->basic_ack($msg->delivery_info['delivery_tag']);
         };
         RabbitMq::pop('test2222', $callback);
     }
