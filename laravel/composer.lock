@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "a5528531bbf716c51c941626dddec8b6",
@@ -3219,16 +3219,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "6.0.6",
+            "version": "6.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "1661926cfa5be825d4f96f89dfac46dc4a19afa8"
+                "reference": "865662550c384bc1db7e51d29aeda1c2c161d69a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/1661926cfa5be825d4f96f89dfac46dc4a19afa8",
-                "reference": "1661926cfa5be825d4f96f89dfac46dc4a19afa8",
+                "url": "https://files.phpcomposer.com/files/sebastianbergmann/php-code-coverage/865662550c384bc1db7e51d29aeda1c2c161d69a.zip",
+                "reference": "865662550c384bc1db7e51d29aeda1c2c161d69a",
                 "shasum": ""
             },
             "require": {
@@ -3278,7 +3278,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-06-01T05:41:09+00:00"
+            "time": "2018-06-01T07:51:50+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -3468,16 +3468,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.2.1",
+            "version": "7.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "9bcf6cbfe3b3a1e45898f8448611f600d4f48c2d"
+                "reference": "3cf0836680bf5c365c627e8566d46c9e1f544db9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/9bcf6cbfe3b3a1e45898f8448611f600d4f48c2d",
-                "reference": "9bcf6cbfe3b3a1e45898f8448611f600d4f48c2d",
+                "url": "https://files.phpcomposer.com/files/sebastianbergmann/phpunit/3cf0836680bf5c365c627e8566d46c9e1f544db9.zip",
+                "reference": "3cf0836680bf5c365c627e8566d46c9e1f544db9",
                 "shasum": ""
             },
             "require": {
@@ -3492,7 +3492,7 @@
                 "phar-io/version": "^1.0",
                 "php": "^7.1",
                 "phpspec/prophecy": "^1.7",
-                "phpunit/php-code-coverage": "^6.0.6",
+                "phpunit/php-code-coverage": "^6.0.7",
                 "phpunit/php-file-iterator": "^2.0",
                 "phpunit/php-text-template": "^1.2.1",
                 "phpunit/php-timer": "^2.0",
@@ -3548,7 +3548,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-06-01T07:23:15+00:00"
+            "time": "2018-06-01T07:54:27+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
