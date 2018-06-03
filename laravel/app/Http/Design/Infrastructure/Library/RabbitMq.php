@@ -24,12 +24,8 @@ class RabbitMq
         $connection = new AMQPStreamConnection('119.23.237.167', 5673, 'myuser', 'mypass');
         $channel    = $connection->channel();
         $channel->queue_declare($queueName, false, false, false, false);
-        for(;;){
-            $msgContent = new AMQPMessage($msg);
-            $channel->basic_publish($msgContent, '', $queueName);
-        }
-     
-        
+        $msgContent = new AMQPMessage($msg);
+        $channel->basic_publish($msgContent, '', $queueName);
         $channel->close();
         $connection->close();
     }
@@ -49,11 +45,8 @@ class RabbitMq
     {
         $connection = new AMQPStreamConnection('119.23.237.167', 5673, 'myuser', 'mypass');
         $channel    = $connection->channel();
-        
         $channel->queue_declare($queueName, false, false, false, false);
-        
         $channel->basic_consume($queueName, '', false, false, false, false, $callback);//
-        
         while (count($channel->callbacks)) {
             $channel->wait();
         }
