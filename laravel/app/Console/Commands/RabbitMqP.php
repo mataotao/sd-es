@@ -31,6 +31,6 @@ class RabbitMqP extends Command
      */
     public function handle()
     {
-        RabbitMq::push('test2222', 44444444444444);
+        RabbitMq::push('test2222', 1);
     }
 }

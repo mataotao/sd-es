@@ -21,7 +21,7 @@ class RabbitMq
      */
     public static function push(string $queueName, string $msg): void
     {
-        $connection = new AMQPStreamConnection('119.23.237.167', 5672, 'myuser', 'mypass');
+        $connection = new AMQPStreamConnection('119.23.237.167', 5673, 'myuser', 'mypass');
         $channel    = $connection->channel();
         $channel->queue_declare($queueName, false, false, false, false);
         $msgContent = new AMQPMessage($msg);
@@ -43,13 +43,10 @@ class RabbitMq
      */
     public static function pop(string $queueName, callable $callback): void
     {
-        $connection = new AMQPStreamConnection('119.23.237.167', 5672, 'myuser', 'mypass');
+        $connection = new AMQPStreamConnection('119.23.237.167', 5673, 'myuser', 'mypass');
         $channel    = $connection->channel();
-        
         $channel->queue_declare($queueName, false, false, false, false);
-        
         $channel->basic_consume($queueName, '', false, false, false, false, $callback);//
-        
         while (count($channel->callbacks)) {
             $channel->wait();
         }
