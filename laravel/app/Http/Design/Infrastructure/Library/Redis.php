@@ -17,9 +17,9 @@ class Redis
     private static function getRedisCluster()
     {
         $servers = [
-            'tcp://192.168.0.113:7000',
-            'tcp://192.168.0.113:7001',
-            'tcp://192.168.0.113:7002',
+            'tcp://119.23.237.167:7000',
+            'tcp://119.23.237.167:7001',
+            'tcp://119.23.237.167:7002',
         ];
         if (self::$RedisCluster === null) {
             self::$RedisCluster = new Client($servers, ['cluster' => 'redis']);

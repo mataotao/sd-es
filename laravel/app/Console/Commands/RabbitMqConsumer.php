@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Http\Design\Infrastructure\Library\RabbitMq;
+use App\Http\Design\Infrastructure\Library\Redis;
 use App\User;
 use Illuminate\Console\Command;
 use PhpAmqpLib\Connection\AMQPStreamConnection;
@@ -36,7 +37,5 @@ class RabbitMqConsumer extends Command
             echo $msg->body;
         };
         RabbitMq::pop('test2222', $callback);
-        
-        
     }
 }
