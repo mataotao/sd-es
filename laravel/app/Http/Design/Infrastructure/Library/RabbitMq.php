@@ -32,7 +32,7 @@ class RabbitMq
     
     
     /**
-     * 回调函数里面第一句必须加  $msg->delivery_info['channel']->basic_ack($msg->delivery_info['delivery_tag']);
+     * 回调函数里最后一句必须加  $msg->delivery_info['channel']->basic_ack($msg->delivery_info['delivery_tag']);
      *     $callback = function ($msg) {
      * $msg->delivery_info['channel']->basic_ack($msg->delivery_info['delivery_tag']);
      * echo $msg->body;
