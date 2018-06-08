@@ -21,10 +21,12 @@ class RabbitMq
      */
     public static function push(string $queueName, string $msg): void
     {
-        $connection = new AMQPStreamConnection('119.23.237.167', 5673, 'myuser', 'mypass');
+        $config     = config('system.rabbit_address');
+        $connection =
+            new AMQPStreamConnection($config['host'], $config['port'], $config['user_name'], $config['password']);
         $channel    = $connection->channel();
         $channel->queue_declare($queueName, false, false, false, false);
-        $msgContent = new AMQPMessage($msg);
+        $msgContent = new AMQPMessage($msg, ['delivery_mode' => AMQPMessage::DELIVERY_MODE_PERSISTENT]); //不要往一个队列发多次
         $channel->basic_publish($msgContent, '', $queueName);
         $channel->close();
         $connection->close();
@@ -43,13 +45,29 @@ class RabbitMq
      */
     public static function pop(string $queueName, callable $callback): void
     {
-        $connection = new AMQPStreamConnection('119.23.237.167', 5673, 'myuser', 'mypass');
+        $config     = config('system.rabbit_address');
+        $connection =
+            new AMQPStreamConnection($config['host'], $config['port'], $config['user_name'], $config['password']);
         $channel    = $connection->channel();
         $channel->queue_declare($queueName, false, false, false, false);
         $channel->basic_consume($queueName, '', false, false, false, false, $callback);//
         while (count($channel->callbacks)) {
-            $channel->wait();
+            //检测断线
+            try {
+                $channel->wait(null,false,30);
+            } catch (\Exception $exception) {
+                $errorLog = [
+                    'errorMessage' => $exception->getMessage(),
+                    'file'         => $exception->getFile(),
+                    'line'         => $exception->getLine(),
+                ];
+                
+                break;
+            }
+            
         }
+        $channel->close();
+        $connection->close();
     }
     
 }

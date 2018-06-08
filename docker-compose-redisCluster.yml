@@ -2,13 +2,13 @@ version: '2'
 services:
   redis-cluster:
     image: grokzen/redis-cluster:4.0.2
-    volumes:
+    #volumes:
       # optional
-      - ./server/redisCluster/data:/data
-      - ./server/redisCluster/redis-conf:/redis-conf
+      #- ./server/redisCluster/data:/data
+      #- ./server/redisCluster/redis-conf:/redis-conf
 #      - ./server/redisCluster/redis-data:/redis-data
     environment:
-      IP: 0.0.0.0
+      IP: 192.168.0.169
     ports:
       # master nodes
       - "7000:7000"
