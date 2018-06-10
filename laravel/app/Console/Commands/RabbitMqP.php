@@ -31,6 +31,18 @@ class RabbitMqP extends Command
      */
     public function handle()
     {
+        $fp           = stream_socket_client("tcp://119.23.237.167:5000", $errno, $errstr);
+        if (!$fp) {
+            return "$errstr ($errno)<br />\n";
+        } else {
+            fwrite($fp, 'testdsdasdasdasd');
+            while (!feof($fp)) {
+                return fgets($fp, 1024) ;
+            }
+            fclose($fp);
+        }
+        echo 1;
+        exit;
         for (;;){
             RabbitMq::push('test2222', 'sssssssssssssssss');
         }
