@@ -15,7 +15,7 @@ $config['redis']['active'] = 'local';
 /**
  * 本地环境
  */
-$config['redis']['local']['ip'] = '192.168.0.113';
+$config['redis']['local']['ip'] = '192.168.0.169';
 $config['redis']['local']['port'] = 6379;
 $config['redis']['local']['select'] = 0;
 
