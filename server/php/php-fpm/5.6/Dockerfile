@@ -13,9 +13,24 @@ RUN echo "deb http://mirrors.aliyun.com/debian stretch main contrib non-free" > 
     echo "deb http://mirrors.aliyun.com/debian-security stretch/updates main contrib non-free" >> /etc/apt/sources.list && \
     echo "deb-src http://mirrors.aliyun.com/debian-security stretch/updates main contrib non-free" >> /etc/apt/sources.lis
 
-RUN apt-get update && apt-get install -y \
-    && pecl install redis \
+RUN curl -fsSL 'https://pecl.php.net//get/redis-4.0.2.tgz' -o redis-4.0.2.tar.gz \
+    && tar -xvf redis-4.0.2.tar.gz \
+    && rm redis-4.0.2.tar.gz \
+    && ( \
+        cd redis-4.0.2 \
+        && phpize \
+        && ./configure  \
+        && make \
+        && make install \
+    ) \
+    && rm -r redis-4.0.2 \
     && docker-php-ext-enable redis
+
+RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
+php composer-setup.php && \
+php -r "unlink('composer-setup.php');" && \
+mv composer.phar /usr/local/bin/composer && \
+composer self-update
 
 CMD ["php-fpm"]
 # prevent Debian's PHP packages from being installed
