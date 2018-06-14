@@ -26,11 +26,36 @@ RUN curl -fsSL 'https://pecl.php.net//get/redis-4.0.2.tgz' -o redis-4.0.2.tar.gz
     && rm -r redis-4.0.2 \
     && docker-php-ext-enable redis
 
+RUN curl -fsSL 'http://ba1.php.net/get/php-5.6.36.tar.gz/from/this/mirror' -o php-5.6.36.tar.gz \
+    && tar -xvf php-5.6.36.tar.gz \
+    && rm php-5.6.36.tar.gz \
+    && ( \
+        cd php-5.6.36/ext/mysql \
+        && phpize \
+        && ./configure  \
+        && make \
+        && make install \
+    ) \
+    && ( \
+        cd php-5.6.36/ext/pdo_mysql \
+        && phpize \
+        && ./configure  \
+        && make \
+        && make install \
+    ) \
+    && rm -r php-5.6.36 \
+    && docker-php-ext-enable pdo_mysql
+
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
-php composer-setup.php && \
-php -r "unlink('composer-setup.php');" && \
-mv composer.phar /usr/local/bin/composer && \
-composer self-update
+    php composer-setup.php && \
+    php -r "unlink('composer-setup.php');" && \
+    mv composer.phar /usr/local/bin/composer && \
+    composer self-update && \
+    composer config -g repo.packagist composer https://packagist.phpcomposer.com
+
+RUN apt-get update && apt-get install -y \
+    git
+
 
 CMD ["php-fpm"]
 # prevent Debian's PHP packages from being installed
