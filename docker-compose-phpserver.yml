@@ -9,15 +9,16 @@ services:
             - ./server/nginx/nginx.conf:/etc/nginx/nginx.conf
             - ./server/nginx/conf:/etc/nginx/conf
             - ./server/nginx/logs:/logs
-            - ./laravel:/usr/src/laravel
+            - ./tg:/usr/src/tg
         stdin_open: true
         tty: true
         links:
           - php-fpm
     php-fpm:
         container_name: php-fpm
-        build:
-            context: server/php/php-fpm/5.6/
+        image: php-fpm-5.6:latest
+#        build:
+#            context: server/php/php-fpm/5.6/
         ports:
             - "9000:9000"
             - "9091:9091"
@@ -28,7 +29,9 @@ services:
         volumes:
              #- /etc/localtime:/etc/localtime:ro
              #- /etc/timezone:/etc/timezone:ro
-             - ./laravel:/usr/src/laravel
+             - ./tg:/usr/src/tg
+             - ./server/php/php-fpm/5.6/php-fpm.d:/usr/local/etc/php-fpm.d
+             - ./server/php/php-fpm/5.6/fpm-php.www.log:/var/log/fpm-php.www.log
         stdin_open: true
         tty: true
         links:
