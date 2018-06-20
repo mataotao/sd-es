@@ -1,0 +1,5 @@
+[14-Jun-2018 15:31:41 PRC] PHP Fatal error:  Call to a member function getValue() on null in /usr/src/tg/web/action/WebLoginBase.class.php on line 19
+[14-Jun-2018 15:31:47 PRC] PHP Fatal error:  Call to a member function getValue() on null in /usr/src/tg/web/action/WebLoginBase.class.php on line 19
+[14-Jun-2018 15:52:18 PRC] PHP Fatal error:  Call to a member function getValue() on null in /usr/src/tg/web/action/WebLoginBase.class.php on line 19
+[14-Jun-2018 15:53:09 PRC] PHP Fatal error:  Call to a member function getValue() on null in /usr/src/tg/web/action/WebLoginBase.class.php on line 19
+[14-Jun-2018 15:53:15 PRC] PHP Fatal error:  Call to a member function getValue() on null in /usr/src/tg/web/action/WebLoginBase.class.php on line 19
