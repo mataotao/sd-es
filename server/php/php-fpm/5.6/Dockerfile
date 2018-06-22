@@ -13,6 +13,10 @@ RUN echo "deb http://mirrors.aliyun.com/debian stretch main contrib non-free" > 
     echo "deb http://mirrors.aliyun.com/debian-security stretch/updates main contrib non-free" >> /etc/apt/sources.list && \
     echo "deb-src http://mirrors.aliyun.com/debian-security stretch/updates main contrib non-free" >> /etc/apt/sources.lis
 
+RUN apt-get update && apt-get install -y \
+    git\
+    libpng-dev
+
 RUN curl -fsSL 'https://pecl.php.net//get/redis-4.0.2.tgz' -o redis-4.0.2.tar.gz \
     && tar -xvf redis-4.0.2.tar.gz \
     && rm redis-4.0.2.tar.gz \
@@ -43,8 +47,29 @@ RUN curl -fsSL 'http://ba1.php.net/get/php-5.6.36.tar.gz/from/this/mirror' -o ph
         && make \
         && make install \
     ) \
+    && ( \
+        cd php-5.6.36/ext/mysqli \
+        && phpize \
+        && ./configure  \
+        && make \
+        && make install \
+    ) \
+    && ( \
+           cd php-5.6.36/ext/bcmath \
+           && phpize \
+           && ./configure  \
+           && make \
+           && make install \
+    ) \
+    && ( \
+           cd php-5.6.36/ext/gd \
+           && phpize \
+           && ./configure  \
+           && make \
+           && make install \
+    ) \
     && rm -r php-5.6.36 \
-    && docker-php-ext-enable pdo_mysql
+    && docker-php-ext-enable mysql pdo_mysql mysqli bcmath gd
 
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
     php composer-setup.php && \
@@ -52,10 +77,6 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&
     mv composer.phar /usr/local/bin/composer && \
     composer self-update && \
     composer config -g repo.packagist composer https://packagist.phpcomposer.com
-
-RUN apt-get update && apt-get install -y \
-    git
-
 
 CMD ["php-fpm"]
 # prevent Debian's PHP packages from being installed
