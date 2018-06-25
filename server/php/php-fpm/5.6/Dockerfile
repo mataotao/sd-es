@@ -68,8 +68,15 @@ RUN curl -fsSL 'http://ba1.php.net/get/php-5.6.36.tar.gz/from/this/mirror' -o ph
            && make \
            && make install \
     ) \
+    && ( \
+            cd php-5.6.36/ext/zip \
+            && phpize \
+            && ./configure  \
+            && make \
+            && make install \
+     ) \
     && rm -r php-5.6.36 \
-    && docker-php-ext-enable mysql pdo_mysql mysqli bcmath gd
+    && docker-php-ext-enable mysql pdo_mysql mysqli bcmath gd zip
 
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
     php composer-setup.php && \
